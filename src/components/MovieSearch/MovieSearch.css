@@ -1,7 +1,6 @@
 
 .movieSearchContainer {
     width: 70vw; 
-    height:90vh;
     margin:auto;
     border: solid 1px gray; 
     border-radius:5px;
@@ -10,9 +9,27 @@
 
 .searchForm {
     position: sticky;
+    z-index: 100;
+    background: white;;
     top:0;
     padding: 10px;
 }
+
+.searchForm input[type=text],
+.searchForm select {
+    outline: none;
+    border:solid 1px gray;
+    box-shadow: 1px 1px 2px blue;
+    border-radius: 10px;
+    padding:5px;
+    font-size: 1rem;
+    box-sizing:border-box;
+}
+
+.searchForm input[type=text] {
+    width: 40%;
+}
+
 
 .searchForm label {
     margin-right: 10px;
@@ -21,8 +38,13 @@
  }
 
  .searchForm button {
+    outline: none;
     margin-left: 10px;
     font-weight: bold;
+    background: blue;
+    padding: 5px 10px;
+    border-radius: 10px;
+    color:white;
  }
 
 .resultsContainer {
@@ -32,6 +54,7 @@
     min-height: 100px; 
     flex-wrap: wrap;
     justify-content: center;
+    align-content: flex-start;
 }
 
  .resultsContainer .loading {

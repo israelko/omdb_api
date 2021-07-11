@@ -5,7 +5,7 @@ function App() {
   return (
     <div className="App">
       <h1>
-        MODB Movie Search
+        OMDB Movie Search
       </h1>
       <MovieSearch />
     </div>
